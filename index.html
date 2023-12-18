@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors!</title>
+    <link rel="stylesheet" href="styles.css" id="styleSheet">
+</head>
+<body>
+    <h1>Computer Choice: <span id="computer-choice">  </span> </h1>
+    <h1>User Choice: <span id="user-choice">  </span> </h1>
+    <h1>Result: <span id="result" class="">  </span> </h1>
+    
+    <button id="Rock">Rock</button>
+    <button id="Paper">Paper</button>
+    <button id="Scissors">Scissors</button>
+
+    <div id="menu">
+        <label id="mono"><input type="radio" name="style" value="monochrome" onclick="changeStyle('monochrome')"> Monochrome</label>
+        <label id="volc"><input type="radio" name="style" value="volcanic" onclick="changeStyle('volcanic')"> Volcanic</label>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

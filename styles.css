@@ -1,0 +1,116 @@
+
+body {
+    text-align: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 150px;
+    height: 90vh;
+    background-color: gray;
+    background-image: linear-gradient(45deg,#EAEBEB,#D6D6D6,#C1C2C2,#ACADAE,#98999A,#838485,#6E7071,#595B5D);
+    background-size: 200%;
+    animation: pozadi 7.5s infinite alternate;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    color: #FFF;
+    background-image: linear-gradient(45deg,#858585,#ACADAE,#595B5D);
+    background-size: 400%;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    cursor: default;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    background-position: right;
+    transition: background-position 0.5s, color 0.5s;
+}
+
+h1:hover,
+h1:focus {
+    background-position: left;
+    color: #ffffff;
+}
+
+@keyframes pozadi {
+    0% {background-position: left;}
+    100% {background-position: right;}
+}
+
+button {
+    font-weight: bold;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    size: 10px;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: x-large;
+    background-color:#FFF;
+    background-image: linear-gradient(45deg,#c2c2c2,#98999A,#838485,#3f3f3f,#838383);
+    background-size: 400%;
+    background-position: left;
+    transition: background-position 0.5s, color 0.5s;
+}
+
+button:hover {
+    background-position: right;
+    color: #FFF;
+}
+
+.Draw{
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg,ivory,#FFD700);
+    background-position: left;
+    background-size: 250% 250%;
+    animation: results 1s infinite alternate;
+}
+.won{
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg,ivory,#0BDA51);
+    background-position: left;
+    background-size: 250% 250%;
+    animation: results 1s infinite alternate;
+}	
+.lost{
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg,ivory,#D2042D);
+    background-position: left;
+    background-size: 250% 250%;
+    animation: results 1s infinite alternate;
+}
+
+@keyframes results {
+    0% {background-position: left;}
+    100% {background-position: right;}
+}
+
+#mono {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg,ivory,#545454);
+    background-position: left;
+    background-size: 250% 250%;
+    animation: results 1s infinite alternate;
+    line-height: 100px;
+    font-size: larger;
+}
+
+#volc {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg,yellow,rgb(255, 94, 0));
+    background-position: left;
+    background-size: 250% 250%;
+    animation: results 1s infinite alternate;
+    line-height: 100px;
+    font-size: larger;
+}
